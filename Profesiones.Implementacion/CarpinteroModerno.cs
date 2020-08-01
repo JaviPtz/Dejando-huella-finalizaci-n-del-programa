@@ -10,6 +10,11 @@ namespace Profeciones.Implementacion
         private Carpintero carpintero = new Carpintero();
 
         public int Id { get { return carpintero.Id; } set { carpintero.Id = value; } }
+
+        public string Mensaje()
+        {
+            return $"hola mi id es {Id}";
+        }
         public string Diseñar()
         {
             return "Estoy diseñando con Autocard";

@@ -15,19 +15,21 @@ namespace Profesiones.Consola
             Constructora MiConstructora = new Constructora();
             MiConstructora.ContratarCarpintero(new CarpinteroEstandar());
             MiConstructora.ContratarCarpintero();
-            MiConstructora.ConstruirMesa();
+            MiConstructora.Trabajando();
 
             var carpintero1 = new Carpintero();
             carpintero1.Id = 1;
-            MiConstructora.ContratarCarpintero(new CarpinteroModerno());
-            MiConstructora.ConstruirMesa();
+            carpintero1.Nombre = "Luis";
 
             var carpintero = new CarpinteroMusical();
             carpintero.Id = 1;
+            carpintero.Nombre = "Sebastián";
             MiConstructora.ContratarCarpintero(carpintero);
+            MiConstructora.Trabajando();
 
-            Console.WriteLine(MiConstructora.ContratarCarpintero());
-            Console.WriteLine(MiConstructora.ConstruirMesa());
+
+            Console.WriteLine(MiConstructora.ContratarCarpintero(new CarpinteroEstandar()));
+            Console.WriteLine(MiConstructora.Trabajando());
             Console.ReadKey();
         }
 
