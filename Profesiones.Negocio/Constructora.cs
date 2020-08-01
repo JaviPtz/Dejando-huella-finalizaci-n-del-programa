@@ -4,6 +4,7 @@ namespace Profeciones.Negocio
 {
     public class Constructora
     {
+        //obtengo todas las actividades que realizan los carpintero (métodos)
         public ICarpintero Carpintero { get; set; }
 
         public string ContratarCarpintero(ICarpintero carpintero) 
@@ -13,9 +14,7 @@ namespace Profeciones.Negocio
         }
 
         public string ConstruirMesa() {
-            return Carpintero.Diseñar() + "Mesa" +
-                   Carpintero.Medir() + "Mesa" +
-                   Carpintero.Clavar() + "Mesa";
+            return   Carpintero.Medir() + "Mesa" + " " + Carpintero.Diseñar() + "Mesa" + " " + Carpintero.Clavar() + "Mesa";
         }
 
         public string ContratarCarpintero() 
