@@ -1,0 +1,14 @@
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\obj\Debug\netcoreapp3.1\Profesiones.Implementacion.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\obj\Debug\netcoreapp3.1\Profesiones.Implementacion.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\obj\Debug\netcoreapp3.1\Profesiones.Implementacion.AssemblyInfo.cs
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\obj\Debug\netcoreapp3.1\Profesiones.Implementacion.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\bin\Debug\netcoreapp3.1\Profesiones.Implementacion.deps.json
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\bin\Debug\netcoreapp3.1\Profesiones.Implementacion.dll
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\bin\Debug\netcoreapp3.1\Profesiones.Implementacion.pdb
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\bin\Debug\netcoreapp3.1\Profeciones.Interface.dll
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\bin\Debug\netcoreapp3.1\Profeciones.Interface.pdb
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\obj\Debug\netcoreapp3.1\Profesiones.Implementacion.csproj.CopyComplete
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\obj\Debug\netcoreapp3.1\Profesiones.Implementacion.dll
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\obj\Debug\netcoreapp3.1\Profesiones.Implementacion.pdb
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\bin\Debug\netcoreapp3.1\Profesiones.Entidad.dll
+C:\Users\USER\source\repos\Institucion\Profesiones.Implementacion\bin\Debug\netcoreapp3.1\Profesiones.Entidad.pdb

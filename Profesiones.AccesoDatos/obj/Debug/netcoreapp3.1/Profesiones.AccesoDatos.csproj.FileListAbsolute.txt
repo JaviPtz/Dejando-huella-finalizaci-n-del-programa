@@ -1,0 +1,4 @@
+C:\Users\USER\source\repos\Institucion\Profesiones.AccesoDatos\bin\Debug\netcoreapp3.1\Profesiones.AccesoDatos.deps.json
+C:\Users\USER\source\repos\Institucion\Profesiones.AccesoDatos\bin\Debug\netcoreapp3.1\Profesiones.AccesoDatos.dll
+C:\Users\USER\source\repos\Institucion\Profesiones.AccesoDatos\obj\Debug\netcoreapp3.1\Profesiones.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Institucion\Profesiones.AccesoDatos\obj\Debug\netcoreapp3.1\Profesiones.AccesoDatos.AssemblyInfo.cs

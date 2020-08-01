@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Profeciones.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Profeciones.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profeciones.Interface.dll": {}
+        }
+      },
+      "Profesiones.Entidad/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Profesiones.Entidad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profesiones.Entidad.dll": {}
+        }
+      },
+      "Profesiones.Implementacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Profeciones.Interface": "1.0.0",
+          "Profesiones.Entidad": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Profesiones.Implementacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profesiones.Implementacion.dll": {}
+        }
+      },
+      "Profesiones.Negocio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Profeciones.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Profesiones.Negocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profesiones.Negocio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Profeciones.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Profeciones.Interface/Profeciones.Interface.csproj",
+      "msbuildProject": "../Profeciones.Interface/Profeciones.Interface.csproj"
+    },
+    "Profesiones.Entidad/1.0.0": {
+      "type": "project",
+      "path": "../Profesiones.Entidad/Profesiones.Entidad.csproj",
+      "msbuildProject": "../Profesiones.Entidad/Profesiones.Entidad.csproj"
+    },
+    "Profesiones.Implementacion/1.0.0": {
+      "type": "project",
+      "path": "../Profesiones.Implementacion/Profesiones.Implementacion.csproj",
+      "msbuildProject": "../Profesiones.Implementacion/Profesiones.Implementacion.csproj"
+    },
+    "Profesiones.Negocio/1.0.0": {
+      "type": "project",
+      "path": "../Profesiones.Negocio/Profesiones.Negocio.csproj",
+      "msbuildProject": "../Profesiones.Negocio/Profesiones.Negocio.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Profeciones.Interface >= 1.0.0",
+      "Profesiones.Implementacion >= 1.0.0",
+      "Profesiones.Negocio >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Institucion\\Profesiones.Consola\\Profesiones.Consola.csproj",
+      "projectName": "Profesiones.Consola",
+      "projectPath": "C:\\Users\\USER\\source\\repos\\Institucion\\Profesiones.Consola\\Profesiones.Consola.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\source\\repos\\Institucion\\Profesiones.Consola\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\USER\\source\\repos\\Institucion\\Profeciones.Interface\\Profeciones.Interface.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Institucion\\Profeciones.Interface\\Profeciones.Interface.csproj"
+            },
+            "C:\\Users\\USER\\source\\repos\\Institucion\\Profesiones.Implementacion\\Profesiones.Implementacion.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Institucion\\Profesiones.Implementacion\\Profesiones.Implementacion.csproj"
+            },
+            "C:\\Users\\USER\\source\\repos\\Institucion\\Profesiones.Negocio\\Profesiones.Negocio.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Institucion\\Profesiones.Negocio\\Profesiones.Negocio.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
