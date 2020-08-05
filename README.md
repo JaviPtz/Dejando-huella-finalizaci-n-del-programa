@@ -1,2 +1,3 @@
 # Dejando-huella-finalizaci-n-del-programa
-Programa en C#
+Programa aún sin terminar
+
