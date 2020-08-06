@@ -10,8 +10,6 @@ namespace Institucion.Negocio
 
         public string Nombre { get; set; }
 
-        //modelar una lista de estudiantes con una propiedad
-
         public List<EstudianteAsignatura> EstudianteAsignaturas { get; set; } = new List<EstudianteAsignatura>();
     }
 }

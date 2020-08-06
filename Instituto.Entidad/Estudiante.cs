@@ -7,7 +7,9 @@ namespace Institucion.Negocio
     {
         public int EstudianteId { get; set; }
 
+        public Curso Curso { get; set; }
         public List<EstudianteAsignatura> EstudianteAsignaturas { get; set; } = new List<EstudianteAsignatura>();
+        public List<Estudiante> Estudiantes{ get; set; } = new List<Estudiante>();
 
         public void Estudiar()
         {
