@@ -19,6 +19,13 @@ namespace Institucion.Consola
                 Nacimiento = new DateTime(2001, 02, 14)
             };
 
+            Estudiante estudiante2 = new Estudiante
+            {
+                Nombre = "Andy",
+                Apellido = "De la cruz",
+                Nacimiento = new DateTime(2001, 02, 14)
+            };
+
             Asignatura asignatura = new Asignatura
             {
                 Nombre = "Programación Visual"
@@ -42,6 +49,9 @@ namespace Institucion.Consola
 
             Secretaria secretaria2 = new Secretaria();
             secretaria2.Agregar(estudiante, curso1);
+
+            Secretaria secretaria3 = new Secretaria();
+            secretaria3.Agregar(estudiante, curso1);
 
             Console.WriteLine($"Hay {Secretaria.Matriculados} estudiantes matriculados");
             Console.WriteLine($"Se han agregado {Secretaria.Agregados} estudiante al curso");

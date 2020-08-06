@@ -17,13 +17,22 @@ namespace Institucion.Negocio
             Matriculados++;
         }
 
-        public void Agregar(Estudiante estudiante, Curso curso)
+        /*public void Agregar(Estudiante estudiante, Curso curso)
         {
             estudiante.Estudiantes.Add(new Estudiante
             {
                 Curso = curso
             });
             Agregados++;
+        }*/
+        public void Agregar(Estudiante estudiante, Curso curso)
+        {
+            curso.Cursos.Add(new Curso
+            {
+                   Estudiante = estudiante
+            });
+            Agregados++;
         }
+
     }
 }

@@ -9,5 +9,9 @@ namespace Instituto.Entidad
 
         public string Nombre { get; set; }
 
+        public Estudiante Estudiante { get; set; }
+
+        public List<Curso> Cursos { get; set; } = new List<Curso>();
+
     }
 }
