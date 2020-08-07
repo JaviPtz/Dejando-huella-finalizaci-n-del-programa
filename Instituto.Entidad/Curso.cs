@@ -5,7 +5,7 @@ namespace Instituto.Entidad
 {
     public class Curso
     {
-        public int Id_Curso{ get; set; }
+        public int IdCurso{ get; set; }
 
         public string Nombre { get; set; }
 

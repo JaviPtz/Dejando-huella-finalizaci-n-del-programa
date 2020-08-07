@@ -17,6 +17,7 @@ namespace Institucion.Negocio
             Matriculados++;
         }
 
+        //pendiente
         /*public void Agregar(Estudiante estudiante, Curso curso)
         {
             estudiante.Estudiantes.Add(new Estudiante

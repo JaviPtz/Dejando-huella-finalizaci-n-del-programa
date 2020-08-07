@@ -12,6 +12,8 @@ namespace Institucion.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Bienvenidos al Instituto!");
+
+            //Instancias de los estudiantes
             Estudiante estudiante = new Estudiante
             {
                 Nombre = "Javier",
@@ -26,6 +28,8 @@ namespace Institucion.Consola
                 Nacimiento = new DateTime(2001, 02, 14)
             };
 
+            //Instancias de las asignaturas
+
             Asignatura asignatura = new Asignatura
             {
                 Nombre = "Programación Visual"
@@ -36,11 +40,24 @@ namespace Institucion.Consola
                 Nombre = "Ingles"
             };
 
+            //Instancias del Curso
+
             Curso curso1 = new Curso
             {
                 Nombre = "cochasqui"
             };
 
+            //Instancias de los Profesores
+            Profesor profesor1 = new Profesor
+            {
+                Nombre = "Roberto",
+                Apellido = "Brito",
+                Nacimiento = new DateTime(1987, 07, 25)
+                 
+            };
+
+
+            //Secretaría
             Secretaria secretaria0 = new Secretaria();
             secretaria0.Matricular(estudiante, asignatura);
 
@@ -53,8 +70,13 @@ namespace Institucion.Consola
             Secretaria secretaria3 = new Secretaria();
             secretaria3.Agregar(estudiante, curso1);
 
+            //Cordinacion de la carrera
+            CoordinacionCarrera coordinacionDesarrollo = new CoordinacionCarrera();
+            coordinacionDesarrollo.Asignar(profesor1, asignatura1);
+            
             Console.WriteLine($"Hay {Secretaria.Matriculados} estudiantes matriculados");
             Console.WriteLine($"Se han agregado {Secretaria.Agregados} estudiante al curso");
+            Console.WriteLine($"A {CoordinacionCarrera.Asignados} profesor se le asignaron {Secretaria.Agregados} materias ");
         }
     }
 }

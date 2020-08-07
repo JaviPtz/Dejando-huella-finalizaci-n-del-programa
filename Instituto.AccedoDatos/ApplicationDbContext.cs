@@ -1,11 +1,12 @@
 ﻿using Institucion.Negocio;
+using Instituto.Entidad;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 
 namespace Instituto.AccedoDatos
 {
-    public class ApplicationDbContext: DbContext
+    public class ApplicationDbContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -19,14 +20,31 @@ namespace Instituto.AccedoDatos
         {
             modelBuilder.Entity<EstudianteAsignatura>()
                 .ToTable("EstudianteporAsignatura")
-                .HasKey(ea => new { ea.AsignaturaId, ea.EstudianteId });
+                .HasKey(ea => new { ea.IdAsignatura, ea.IdEstudiante });
+
+            modelBuilder.Entity<ProfesorAsignatura>()
+                .ToTable("ProfesorporAsignatura")
+                .HasKey(pa => new { pa.IdAsignatura, pa.IdProfesor });
+
+            modelBuilder.Entity<Profesor>()
+                .HasKey(p => new { p.IdProfesor });
 
             modelBuilder.Entity<Estudiante>()
-                .HasKey(e => new { e.EstudianteId });
+                .HasKey(e => new { e.IdEstudiante });
+
+            modelBuilder.Entity<Curso>()
+                .HasKey(c => new { c.IdCurso });
+
+            modelBuilder.Entity<Asignatura>()
+                .HasKey(a => new { a.IdAsignatura});
         }
+
+        //todos los dbsets
         public DbSet<Estudiante> Estudiantes { get; set; }
         public DbSet<Asignatura> Asignaturas { get; set; }
-
+        public DbSet<Profesor> Profesores { get; set; }
+        public DbSet<Curso> Cursos { get; set; }
+        public DbSet<ProfesorAsignatura> ProfesorAsignaturas { get; set; }
         public DbSet<EstudianteAsignatura> EstudianteAsignaturas { get; set; }
     }
 }
